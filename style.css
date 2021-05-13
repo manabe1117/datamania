@@ -1,0 +1,531 @@
+@charset "UTF-8";
+
+.type-h1 {
+    font-size: 3.4rem;
+    font-weight: bold;
+}
+
+.type-h2 {
+    font-size: 3.0rem;
+    font-weight: bold;
+    background-image: linear-gradient(135deg, #378dd7 10px, transparent 0px),
+                    linear-gradient(-45deg, #378dd7 10px, transparent 0px);
+    line-height: 1.6;
+}
+
+.type-h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.type-p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ヘッダー */
+.page-header-inner {
+    display: flex;
+    background: url(images/main_visual@2x.jpg) center top no-repeat;
+    background-size: cover;
+    height: 480px;
+    padding: 0 100px;
+    position: relative;
+    align-items: center;
+    background-position: center;
+}
+
+.header-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-title{
+    color: white;
+    position: absolute;
+    display: inline-block;
+    line-height: normal;
+    padding: 0 5px 0 5px;
+    left: 90px;
+}
+
+.black-belt {
+    background-color: black;
+    padding: 2px 5px 2px 5px;
+}
+
+.circle {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-color: white;
+    color: #378dd7;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    align-items: center;
+    border: #378dd7 solid 5px;
+}
+
+.circle h3 {
+    margin-top: 50px;
+    line-height: 1.5;
+}
+
+.circle:hover {
+    background-color: #378dd7;
+    color: white;
+    transition: 0.3s;
+}
+
+.header-nav {
+    justify-content: space-between;
+    background-color: #378dd7;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    font-size: 16px;
+    height: 75px;
+}
+
+.header-nav a {
+    color: white;
+    padding: 10px;
+}
+
+.header-ul {
+    display: flex;
+}
+
+.header-ul:nth-child(n+1){
+    
+}
+
+.header-item:nth-child(n+2){
+    margin-left: 50px;
+}
+
+.header-ul a {
+    color: white;
+}
+
+.header-ul a:hover {
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.inquiry {
+    /* display: inline-block; */
+    background-color: white;
+    width: 200px;
+    height: 100%;
+    text-align: center;
+    line-height: 75px;
+}
+
+.inquiry a {
+    padding: 27px 52px;
+    background-color: #aed91c;
+}
+
+.inquiry a:hover {
+    opacity: 0.7;
+    background: #aed91c;
+    transition: 0.3s;
+}
+
+/* 最新情報 */
+.new-info {
+    text-align: center;
+    width: 650px;
+    height: 450px;
+}
+
+.new-info h2 {
+    margin: 100px 230px 50px 230px;
+    /* background-image: linear-gradient(135deg, #378dd7 10px, transparent 0px),
+                    linear-gradient(-45deg, #378dd7 10px, transparent 0px);
+    line-height: 1.6; */
+}
+
+.history li {
+    list-style-type: none;
+    color: black;
+}
+
+.his-list a {
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    text-align: justify;
+    color: black;
+}
+
+.his-list span {
+    width: 470px;
+}
+
+.past {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.past a {
+    color: #378dd7;
+}
+
+.his-list:hover {
+    text-decoration: underline;
+}
+
+.past:hover {
+    text-decoration: underline;
+}
+
+/* サービスの特徴 */
+.service {
+    text-align: center;
+    background-color: #E8F6FF;
+    padding-top: 100px;
+    height: 600px;
+}
+
+.service h2 {
+    margin: 0px 350px 50px 350px;
+}
+
+.service-detail {
+    background-color: white;
+    height: 400px;
+}
+
+.service-desc {
+    display: flex;
+    padding-top: 50px;
+}
+
+.service-p {
+    width: 50%;
+}
+
+.service-p p {
+    text-align: justify;
+    margin: 0 0 10px 50px;
+}
+
+.service-img {
+    width: 50%;
+}
+
+.service-img img {
+    height: 75px;
+    width: 75px;
+    margin-left: 40px;
+}
+
+.img-first {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.img-second {
+    text-align: right;
+    margin: 15px 50px 0 0;
+}
+
+.detail-button {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.primary-button {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 60px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    color: #008DD5;
+    background-color: #fff;
+    border: 1px solid #008DD5;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  
+  .primary-button::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 1;
+    background: linear-gradient(135deg, transparent 50%, #008DD5 50%);
+    opacity: 1;
+  }
+
+  .primary-button:hover {
+      background-color: #008DD5;
+      color: #fff;
+  }
+
+  .primary-button:hover::after {
+    background: linear-gradient(135deg, transparent 50%, #fff 50%);
+  }
+  
+  /* Data Maniaの３つの強味 */
+.data-mania {
+    text-align: center;
+    height: 1300px;
+}
+
+.data-mania h2 {
+    margin: 100px 300px 50px 300px;
+}
+
+.data-mania h3 {
+    border-bottom: 2px solid #008DD5;
+}
+
+.data {
+    display: flex;
+    margin-top: 50px;
+}
+
+.data-desc {
+    align-items: center;
+    text-align: justify;
+    margin: auto;
+    margin-left: 50px;
+}
+
+.data-desc p {
+    margin-top: 20px;
+}
+
+/* お客様の声 */
+.customer-voice {
+    text-align: center;
+    background-color: #E8F6FF;
+    padding: 100px;
+    /* height: 1500px; */
+}
+
+.customer-voice h2 {
+    margin: 0 400px 100px 400px;
+}
+
+.customers {
+    background-color: white;
+    padding: 70px;
+    /* display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr; */
+}
+
+.customers::after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.customer {
+    border: solid 1px gray;
+    border-radius: 10px;
+    width: 400px;
+    /* margin: auto; */
+    overflow: hidden;
+}
+
+.customer p {
+    text-align: justify;
+    padding: 15px;
+}
+
+.customer-name {
+    background-color: #008DD5;
+    color: white;
+    height: 60px;
+}
+
+.customer:nth-child(1), .customer:nth-child(4) {
+    float: left;
+}
+
+.customer:nth-child(2), .customer:nth-child(3) {
+    float: right;
+}
+ 
+.customer:nth-child(n+3) {
+    margin-top: 80px;
+}
+
+/* お問い合わせ */
+.inquiry-main {
+    text-align: center;
+    padding: 100px;
+}
+
+.inquiry-main h2 {
+    margin: 0 380px 100px 380px;
+}
+
+.inquiry-main label {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.inquiry-item {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.inquiry-item input {
+    font-size: 18px;
+    line-height: 1.6;
+    border-radius: 5px;
+    border: solid 1px;
+}
+
+.inquiry-item textarea {
+    border-radius: 5px;
+    border: solid 1px;
+    resize: none;
+}
+
+.input-list {
+    width: 600px;
+    margin: auto;
+}
+
+.combobox {
+    width: 200px;
+    height: 40px;
+}
+
+.combobox::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 12px;
+    height: 9px;
+    background: url(images/icon-triangle.png) no-repeat;
+    bottom: 25px;
+    left: 180px;
+    z-index: 1;
+}
+
+.combobox select {
+    display: block;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    border-radius: 5px;
+    -webkit-appearance: none;/* ベンダープレフィックス(Google Chrome、Safari用) */
+    -moz-appearance: none; /* ベンダープレフィックス(Firefox用) */
+    appearance: none; /* 標準のスタイルを無効にする */
+}
+
+
+.sendbtn {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 60px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    color: #008DD5;
+    background-color: #fff;
+    border: 1px solid #008DD5;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.sendbtn::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 1;
+    background: linear-gradient(135deg, transparent 50%, #008DD5 50%);
+    opacity: 1;
+}
+
+.sendbtn:hover {
+    background-color: #008DD5;
+    color: #fff;
+}
+
+.sendbtn:hover::after {
+    background: linear-gradient(135deg, transparent 50%, #fff 50%);
+}
+
+/* .input-list select {
+    float: left;
+} */
+
+.form {
+    width: 100%;
+}
+
+/* フッター */
+.footer {
+    background: #008DD5;
+}
+
+.footer-informations {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-list {
+    margin-bottom: 50px;
+}
+
+.info-list li {
+    list-style: none;
+    color: white;
+    font-size: 14px;
+    line-height: 2.5;
+}
+
+.info-list li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer-info {
+    margin-top: 50px;
+}
+
+.footer-info p {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
